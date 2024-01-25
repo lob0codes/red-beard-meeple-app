@@ -1,0 +1,31 @@
+.a--gray-transition {
+  color: black;
+  transition: color 0.4;
+}
+
+.a--gray-transition:hover {
+  color: gray;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+.nav {
+  align-items: center;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem;
+}
