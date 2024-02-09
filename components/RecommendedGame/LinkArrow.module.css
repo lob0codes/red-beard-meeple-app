@@ -1,0 +1,17 @@
+.link-arrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: green;
+  transition-property: gap, color;
+  transition: 0.1s ease-in-out;
+}
+
+.link-arrow:hover {
+  gap: 1.2rem;
+  color: #4dbb80;
+}
+
+.link-arrow > p {
+  margin: 0;
+}

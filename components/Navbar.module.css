@@ -1,14 +1,5 @@
-.a--gray-transition {
-  color: black;
-  transition: color 0.4;
-}
-
-.a--gray-transition:hover {
-  color: gray;
-}
-
 .icon {
-  height: 100px;
+  height: 90px;
   width: 100px;
 }
 

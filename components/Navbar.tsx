@@ -12,11 +12,11 @@ export default function Navbar() {
         alt="webpage icon"
       ></Image>
       <ul className={classes.nav__list}>
-        <li className={`${classes["a--gray-transition"]} ${classes.nav__item}`}>
+        <li className={`a--gray-transition ${classes.nav__item}`}>
           <Link href={"/"}>Home</Link>
         </li>
-        <li className={`${classes["a--gray-transition"]} ${classes.nav__item}`}>
-          <Link href={"/"}>About</Link>
+        <li className={`a--gray-transition ${classes.nav__item}`}>
+          <Link href={"/about"}>About</Link>
         </li>
       </ul>
     </nav>

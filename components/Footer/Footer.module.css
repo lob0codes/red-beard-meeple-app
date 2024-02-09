@@ -1,0 +1,23 @@
+.icon {
+  height: 90px;
+  width: 100px;
+}
+
+.footer {
+  background-color: lightgreen;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.footer__section__heading {
+  font-size: 1.6rem;
+}
+
+.footer__section__content {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0;
+}

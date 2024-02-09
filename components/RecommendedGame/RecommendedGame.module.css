@@ -1,0 +1,32 @@
+.recommended-game {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border-radius: 10px; /* Adjust the border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set the box shadow */
+  overflow: hidden;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.recommended-game__content {
+  margin: 1rem 1rem;
+}
+
+/* .recommended-game__content > p {
+  width: 40ch;
+} */
+
+.recommended-game__content > h3 {
+  font-weight: bold;
+  color: green;
+  font-size: 1.8rem;
+}
+
+.recommended-game__content > p {
+  font-size: 1.5rem;
+}
