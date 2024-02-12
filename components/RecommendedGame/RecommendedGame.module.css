@@ -1,10 +1,11 @@
 .recommended-game {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 200px;
   border-radius: 10px; /* Adjust the border-radius for rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set the box shadow */
   overflow: hidden;
+  background-color: #bebebe;
 }
 
 .image-container {
@@ -17,16 +18,16 @@
   margin: 1rem 1rem;
 }
 
-/* .recommended-game__content > p {
-  width: 40ch;
-} */
+.recommended-game__content > p {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .recommended-game__content > h3 {
   font-weight: bold;
   color: green;
   font-size: 1.8rem;
-}
-
-.recommended-game__content > p {
-  font-size: 1.5rem;
 }

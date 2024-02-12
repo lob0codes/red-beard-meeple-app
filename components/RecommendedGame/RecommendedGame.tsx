@@ -8,7 +8,7 @@ export default function RecommendedGame({
   description,
 }: {
   title: string;
-  description: string;
+  description: string | null;
 }) {
   return (
     <article className={classes["recommended-game"]}>

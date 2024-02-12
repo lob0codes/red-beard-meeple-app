@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.block {
+  padding: 0 2rem;
+}
+
 /* Typography */
 body {
   background-color: lightgray;
