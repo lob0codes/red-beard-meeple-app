@@ -12,3 +12,8 @@ export function getGames() {
   const allGames = db.game.findMany();
   return allGames;
 }
+
+export async function getGame(id: number) {
+  const game = await db.game.findUnique({ where: { id: id } });
+  return game;
+}

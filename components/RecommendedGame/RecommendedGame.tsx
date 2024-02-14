@@ -6,9 +6,11 @@ import LinkArrow from "./LinkArrow";
 export default function RecommendedGame({
   title,
   description,
+  gameId,
 }: {
   title: string;
   description: string | null;
+  gameId: number;
 }) {
   return (
     <article className={classes["recommended-game"]}>
@@ -19,7 +21,7 @@ export default function RecommendedGame({
       <div className={classes["recommended-game__content"]}>
         <h3>{title}</h3>
         <p>{description}</p>
-        <LinkArrow />
+        <LinkArrow href={`/${gameId}`} />
       </div>
     </article>
   );

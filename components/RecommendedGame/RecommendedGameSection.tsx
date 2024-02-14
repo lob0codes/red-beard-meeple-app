@@ -24,6 +24,7 @@ export default async function RecommendedGameSection() {
               <CarouselItem key={game.id} className="basis-2/7">
                 <div className="p-1">
                   <RecommendedGame
+                    gameId={game.id}
                     title={game.name}
                     description={game.description}
                   ></RecommendedGame>
