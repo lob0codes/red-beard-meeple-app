@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import slugify from "slugify";
 
 declare global {
   var prisma: PrismaClient | undefined;

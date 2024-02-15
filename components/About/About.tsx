@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutImage from "@/assets/lord-of-the-rings-wallpaper.jpg";
+import aboutImage from "@/public/images/lord-of-the-rings-wallpaper.jpg";
 import classes from "@/components/About/About.module.css";
 
 export default function About() {

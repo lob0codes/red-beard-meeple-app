@@ -1,6 +1,6 @@
 import classes from "@/components/Navbar.module.css";
 import Image from "next/image";
-import webpageIcon from "@/assets/webpage_icon.png";
+import webpageIcon from "@/public/images/webpage_icon.png";
 import Link from "next/link";
 
 export default function Navbar() {
