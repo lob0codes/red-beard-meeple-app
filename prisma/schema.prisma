@@ -11,8 +11,16 @@ datasource db {
 }
 
 model Game {
-  id  Int  @id @default(autoincrement())
+  id  Int @id @default(autoincrement())
   name  String  @db.VarChar(255)
   description String?
-  image String @db.VarChar(255)
+  images GameImage[]
+}
+
+model GameImage {
+  id Int @id @default(autoincrement())
+  path String  @db.VarChar(255)
+  type String @db.VarChar(255)
+  game Game @relation(fields: [gameId], references: [id])
+  gameId Int
 }

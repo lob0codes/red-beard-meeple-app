@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import slugify from "slugify";
 
 declare global {
   var prisma: PrismaClient | undefined;
@@ -17,4 +16,14 @@ export function getGames() {
 export async function getGame(id: number) {
   const game = await db.game.findUnique({ where: { id: id } });
   return game;
+}
+
+export async function getGameImagesByType(gameId: number, imageType: string) {
+  const images = await db.gameImage.findMany({
+    where: { gameId: gameId, type: imageType },
+    select: { path: true },
+  });
+
+  const imagesPaths: string[] = images.map((image) => image.path);
+  return imagesPaths;
 }
