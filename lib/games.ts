@@ -13,6 +13,13 @@ export function getGames() {
   return allGames;
 }
 
+export function getGamesIncludingThumbnailImage() {
+  const allGames = db.game.findMany({
+    include: { images: { where: { type: "thumbnail" } } },
+  });
+  return allGames;
+}
+
 export async function getGame(id: number) {
   const game = await db.game.findUnique({ where: { id: id } });
   return game;

@@ -1,5 +1,5 @@
 import classes from "@/components/RecommendedGame/RecommendedGameSection.module.css";
-import { getGames } from "@/lib/games";
+import { getGamesIncludingThumbnailImage } from "@/lib/games";
 
 import RecommendedGame from "@/components/RecommendedGame/RecommendedGame";
 import {
@@ -12,7 +12,7 @@ import {
 import { cn } from "@/lib/utils";
 
 export default async function RecommendedGameSection() {
-  const games = await getGames();
+  const games = await getGamesIncludingThumbnailImage();
 
   return (
     <div className={cn("block", classes["recommended-game-section"])}>
@@ -27,7 +27,7 @@ export default async function RecommendedGameSection() {
                     gameId={game.id}
                     title={game.name}
                     description={game.description}
-                    image={game.image}
+                    image={game.images[0].path}
                   ></RecommendedGame>
                 </div>
               </CarouselItem>

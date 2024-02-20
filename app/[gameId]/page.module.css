@@ -24,3 +24,27 @@
   padding: 0 2rem 1rem 2rem;
   margin: 0;
 }
+
+.game-details__image-gallery {
+  padding-bottom: 5rem;
+}
+
+.scroll-area {
+  margin: 0 auto;
+  white-space: nowrap;
+  width: 500px;
+  background-color: #bebebe;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Add padding inside the scroll area */
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.image-container > img {
+  object-fit: cover;
+}

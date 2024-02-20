@@ -1,17 +1,19 @@
-.square1 {
-  width: 70px;
-  height: 70px;
-  background-color: brown;
+.scroll-area {
+  margin: 0 auto;
+  white-space: nowrap;
+  width: 500px;
+  background-color: #bebebe;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Add padding inside the scroll area */
 }
 
-.square2 {
-  width: 70px;
-  height: 70px;
-  background-color: blue;
+.image-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
 
-.square3 {
-  width: 70px;
-  height: 70px;
-  background-color: green;
+.image-container > img {
+  object-fit: cover;
 }

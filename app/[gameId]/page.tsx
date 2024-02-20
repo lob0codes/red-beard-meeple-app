@@ -1,4 +1,5 @@
 import classes from "@/app/[gameId]/page.module.css";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 import { getGame, getGameImagesByType } from "@/lib/games";
 import Image from "next/image";
@@ -14,6 +15,8 @@ export default async function GameDetailsPage({
     const thumbnailImageUrl = (
       await getGameImagesByType(gameData.id, "thumbnail")
     )[0];
+
+    const gallery: string[] = await getGameImagesByType(2, "gallery");
 
     return (
       <div className="block container">
@@ -36,6 +39,16 @@ export default async function GameDetailsPage({
           </section>
           <section className={classes["game-details__image-gallery"]}>
             <h2>Game Gallery</h2>
+            <ScrollArea className={classes["scroll-area"]}>
+              <div className="flex gap-10 p-4">
+                {gallery.map((image) => (
+                  <div key={image} className={classes["image-container"]}>
+                    <Image src={image} alt="game-image" fill />
+                  </div>
+                ))}
+              </div>
+              <ScrollBar orientation="horizontal" />
+            </ScrollArea>
           </section>
         </article>
       </div>

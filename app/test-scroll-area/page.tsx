@@ -1,16 +1,19 @@
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import classes from "@/app/test-scroll-area/page.module.css";
 import { getGameImagesByType } from "@/lib/games";
+import Image from "next/image";
 
 export default async function GameGallery() {
-  const gallery = await getGameImagesByType(2, "thumbnail");
+  const gallery: string[] = await getGameImagesByType(2, "gallery");
 
   return (
-    <ScrollArea className="w-96 whitespace-nowrap rounded-md border">
-      <div className="flex w-max space-x-4 p-4">
-        <div className={classes.square1}></div>
-        <div className={classes.square2}></div>
-        <div className={classes.square3}></div>
+    <ScrollArea className={classes["scroll-area"]}>
+      <div className="flex gap-10 p-4">
+        {gallery.map((image) => (
+          <div key={image} className={classes["image-container"]}>
+            <Image src={image} alt="game-image" fill />
+          </div>
+        ))}
       </div>
       <ScrollBar orientation="horizontal" />
     </ScrollArea>
