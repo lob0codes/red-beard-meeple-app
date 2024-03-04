@@ -15,9 +15,11 @@ export default async function RecommendedGameSection() {
   const games = await getGamesIncludingThumbnailImage();
 
   return (
-    <div className={cn("block", classes["recommended-game-section"])}>
-      <h2>Recommended Games</h2>
-      <div className="flex items-center justify-center m-10">
+    <div className={cn("block container", classes["recommended-game-section"])}>
+      <h2 className={classes["recommended-game-section__header"]}>
+        Recommended Games
+      </h2>
+      <div className={classes["recommended-game-section__content"]}>
         <Carousel className="w-full max-w-7xl">
           <CarouselContent>
             {games.map((game) => (

@@ -3,11 +3,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0;
-  padding: 3rem;
+  gap: 4rem;
 }
 
-.recommended-game-section > h2 {
+.recommended-game-section__header {
+  align-self: flex-start;
   margin: 0;
-  padding-right: 48rem;
+  padding-left: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .recommended-game-section__header {
+    align-self: center;
+    padding-left: 0;
+  }
+}
+
+.recommended-game-section__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
