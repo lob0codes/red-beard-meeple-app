@@ -17,7 +17,12 @@ export default function RecommendedGame({
   return (
     <article className={classes["recommended-game"]}>
       <div className={classes["image-container"]}>
-        <Image fill src={image} alt="Recommended game image." />
+        <Image
+          fill
+          objectFit="cover"
+          src={image}
+          alt="Recommended game image."
+        />
       </div>
 
       <div className={classes["recommended-game__content"]}>

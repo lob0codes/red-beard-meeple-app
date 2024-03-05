@@ -16,22 +16,18 @@ export default async function RecommendedGameSection() {
 
   return (
     <div className={cn("block container", classes["recommended-game-section"])}>
-      <h2 className={classes["recommended-game-section__header"]}>
-        Recommended Games
-      </h2>
-      <div className={classes["recommended-game-section__content"]}>
-        <Carousel className="w-full max-w-7xl">
-          <CarouselContent>
+      <h2 className={classes.header}>Recommended Games</h2>
+      <div className={classes.content}>
+        <Carousel className={classes.carousel}>
+          <CarouselContent className={classes["carousel-content"]}>
             {games.map((game) => (
-              <CarouselItem key={game.id} className="basis-2/7">
-                <div className="p-1">
-                  <RecommendedGame
-                    gameId={game.id}
-                    title={game.name}
-                    description={game.description}
-                    image={game.images[0].path}
-                  ></RecommendedGame>
-                </div>
+              <CarouselItem key={game.id} className={classes["carousel-item"]}>
+                <RecommendedGame
+                  gameId={game.id}
+                  title={game.name}
+                  description={game.description}
+                  image={game.images[0].path}
+                ></RecommendedGame>
               </CarouselItem>
             ))}
           </CarouselContent>

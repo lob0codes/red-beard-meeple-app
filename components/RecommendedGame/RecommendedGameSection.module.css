@@ -6,21 +6,52 @@
   gap: 4rem;
 }
 
-.recommended-game-section__header {
+.header {
   align-self: flex-start;
   margin: 0;
-  padding-left: 8rem;
+  padding-left: 4.5rem;
 }
 
 @media screen and (max-width: 768px) {
-  .recommended-game-section__header {
+  .header {
     align-self: center;
     padding-left: 0;
   }
 }
 
-.recommended-game-section__content {
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 93%;
+}
+
+.carousel-item {
+  flex-basis: 25%;
+  padding-left: 2rem;
+}
+
+@media screen and (max-width: 1115px) {
+  .carousel-item {
+    flex-basis: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .carousel-item {
+    flex-basis: 100%;
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .carousel-item {
+    width: 8rem;
+  }
 }

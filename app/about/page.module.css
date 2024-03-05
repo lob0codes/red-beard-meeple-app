@@ -25,7 +25,7 @@
   .about-us {
     flex-direction: column;
     align-items: start;
-    row-gap: rem;
+    row-gap: 0.8rem;
   }
 
   .header {
