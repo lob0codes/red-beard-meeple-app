@@ -1,15 +1,10 @@
-.icon {
-  height: 90px;
-  width: 100px;
-}
-
 .footer {
-  background-color: lightgreen;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  background-color: lightgreen;
+  display: flex;
   font-weight: bold;
   margin-top: auto;
+  justify-content: center;
 }
 
 .footer__section__heading {
@@ -20,4 +15,38 @@
   font-size: 1.5rem;
   margin: 1rem 0;
   padding: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  gap: 20rem;
+}
+
+.icon {
+  width: 50%;
+}
+
+@media screen and (max-width: 765px) {
+  .content {
+    gap: 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    gap: 7rem;
+    width: 65%;
+  }
+
+  .icon {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    gap: 5rem;
+  }
 }
