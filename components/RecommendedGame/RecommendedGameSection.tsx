@@ -22,12 +22,12 @@ export default async function RecommendedGameSection() {
           <CarouselContent className={classes["carousel-content"]}>
             {games.map((game) => (
               <CarouselItem key={game.id} className={classes["carousel-item"]}>
-                <RecommendedGame
+                {/* <RecommendedGame
                   gameId={game.id}
                   title={game.name}
                   description={game.description}
                   image={game.images[0].path}
-                ></RecommendedGame>
+                ></RecommendedGame> */}
                 <p>
                   {game.name} {games.length}
                 </p>
