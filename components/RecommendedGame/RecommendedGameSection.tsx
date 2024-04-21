@@ -28,6 +28,9 @@ export default async function RecommendedGameSection() {
                   description={game.description}
                   image={game.images[0].path}
                 ></RecommendedGame>
+                <p>
+                  {game.name} {games.length}
+                </p>
               </CarouselItem>
             ))}
           </CarouselContent>

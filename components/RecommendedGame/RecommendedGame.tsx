@@ -1,6 +1,5 @@
 import classes from "@/components/RecommendedGame/RecommendedGame.module.css";
 import Image from "next/image";
-import wingspanImage from "@/public/images/wingspan.webp";
 import LinkArrow from "./LinkArrow";
 
 export default function RecommendedGame({
