@@ -25,7 +25,9 @@ export default async function RecommendedGameSection() {
                 <RecommendedGame
                   gameId={game.id}
                   title={game.name}
-                  description={game.description}
+                  description={
+                    game.description ? game.description : "No description."
+                  }
                   image={game.images[0].path}
                 ></RecommendedGame>
               </CarouselItem>
