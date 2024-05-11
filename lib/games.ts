@@ -31,6 +31,10 @@ export async function getGameImagesByType(gameId: number, imageType: string) {
     select: { path: true },
   });
 
-  const imagesPaths: string[] = images.map((image) => image.path);
-  return imagesPaths;
+  if (images.length === 0) {
+    return "";
+  } else {
+    const imagesPaths: string[] = images.map((image) => image.path);
+    return imagesPaths;
+  }
 }

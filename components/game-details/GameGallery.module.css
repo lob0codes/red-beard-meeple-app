@@ -1,0 +1,22 @@
+.scroll-area {
+  margin: 0 auto;
+  white-space: nowrap;
+  background-color: #bebebe;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.no-images {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

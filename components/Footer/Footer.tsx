@@ -1,8 +1,7 @@
-import Image from "next/image";
-import classes from "@/components/Footer/Footer.module.css";
-import FooterStartupSection from "./FooterStartupSection";
-import FooterSocialMediaSection from "./FooterSocialMediaSection";
-import PageIcon from "../General/PageIcon";
+import classes from "@/components/footer/Footer.module.css";
+import FooterStartupSection from "@/components/footer/FooterStartupSection";
+import FooterSocialMediaSection from "@/components/footer/FooterSocialMediaSection";
+import PageIcon from "../general/PageIcon";
 
 export default function Footer() {
   return (

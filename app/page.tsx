@@ -1,5 +1,4 @@
-import RecommendedGameSection from "@/components/RecommendedGame/RecommendedGameSection";
-import { Separator } from "@/components/ui/separator";
+import RecommendedGameSection from "@/components/recommended-game/RecommendedGameSection";
 
 export default function Home() {
   return (

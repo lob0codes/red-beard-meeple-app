@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
-import classes from "@/components/RecommendedGame/LinkArrow.module.css";
+import classes from "@/components/recommended-game/LinkArrow.module.css";
 
 export default function LinkArrow({ href }: { href: string }) {
   return (

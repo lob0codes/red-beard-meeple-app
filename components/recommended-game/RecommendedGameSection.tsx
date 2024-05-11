@@ -1,7 +1,7 @@
-import classes from "@/components/RecommendedGame/RecommendedGameSection.module.css";
+import classes from "@/components/recommended-game/RecommendedGameSection.module.css";
 import { getGamesIncludingThumbnailImage } from "@/lib/games";
 
-import RecommendedGame from "@/components/RecommendedGame/RecommendedGame";
+import RecommendedGame from "@/components/recommended-game/RecommendedGame";
 import {
   Carousel,
   CarouselContent,
