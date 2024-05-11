@@ -1,4 +1,4 @@
-import classes from "@/components/General/PageIcon.module.css";
+import classes from "@/components/general/PageIcon.module.css";
 import webpageIcon from "@/public/images/webpage_icon.png";
 
 import Image from "next/image";
