@@ -1,7 +1,7 @@
 import classes from "@/components/footer/Footer.module.css";
 import FooterStartupSection from "@/components/footer/FooterStartupSection";
 import FooterSocialMediaSection from "@/components/footer/FooterSocialMediaSection";
-import PageIcon from "../general/PageIcon";
+import PageIcon from "@/components/general/PageIcon";
 
 export default function Footer() {
   return (

@@ -1,6 +1,6 @@
 import classes from "@/components/recommended-game/RecommendedGame.module.css";
 import Image from "next/image";
-import LinkArrow from "./LinkArrow";
+import LinkArrow from "@/components/recommended-game/LinkArrow";
 
 interface RecommendedGameProps {
   title: string;
