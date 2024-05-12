@@ -1,5 +1,5 @@
-import classes from "@/components/footer/FooterSocialMediaSection.module.css";
-import footerClasses from "@/components/footer/Footer.module.css";
+import classes from "@/components/Footer/FooterSocialMediaSection.module.css";
+import footerClasses from "@/components/Footer/Footer.module.css";
 import { FaInstagram } from "react-icons/fa6";
 import Link from "next/link";
 
