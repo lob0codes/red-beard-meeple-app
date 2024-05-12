@@ -1,6 +1,6 @@
 import classes from "@/components/Navbar.module.css";
 import Link from "next/link";
-import PageIcon from "@/components/general/PageIcon";
+import PageIcon from "@/components/General/PageIcon";
 
 export default function Navbar() {
   return (
